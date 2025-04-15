@@ -6,7 +6,7 @@ image: /images/ocean-sciences.webp
 categories: research education oceanography
 author: Anirudhh Venkat
 authors: Hanna Bridgham, Eric Morales, <strong>Anirudhh Venkat</strong>, Tricia Meredith, Tim Moore, Jordon Beckler
-venue: 2024 Ocean Sciences Meeting, February 23, 2024, New Orleans, LA
+venue: Ocean Sciences Meeting 2024
 abstract: /pdfs/AVenkat_OSM_Abstract.pdf
 ---
 

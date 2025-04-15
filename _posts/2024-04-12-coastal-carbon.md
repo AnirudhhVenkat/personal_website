@@ -6,7 +6,7 @@ image: /images/CDOM.png
 categories: research environmental-science data-science
 author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>, Hanna Bridgham, Eric Morales, Jordon Beckler
-venue: Wilkes Honors College Spring Research Symposium, April 12, 2024, Jupiter, FL
+venue: Wilkes Honors College Spring Research Symposium, 2024
 abstract: /pdfs/AVenkat_NASAMUREP_Abstract.pdf
 ---
 
