@@ -1,22 +1,22 @@
 @import "reset", "variables", "highlights", "svg-icons";
 
 html {
-  background-color: $background;
+  background-color: #f8f9fa;
 }
 
 body {
   font-family: $helveticaNeue;
-  color: $text;
+  color: #2c3e50;
   line-height: 1.5;
   font-size: 16px;
-  background-color: $background;
+  background-color: #f8f9fa;
 }
 
 a {
-  color: $link;
+  color: #3498db;
   text-decoration: none;
   &:hover {
-    color: $link-hover;
+    color: #2980b9;
     text-decoration: underline;
   }
 }
@@ -36,10 +36,14 @@ a {
     img {
         max-width: 100%;
         height: auto;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         display: block;
         margin: 0 auto;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: translateY(-2px);
+        }
     }
 }
 
@@ -55,44 +59,109 @@ a {
 .pdf {
     width: 100%;
     max-width: 800px;
-    embed {
+    iframe {
         width: 100%;
         height: 600px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         display: block;
         margin: 0 auto;
+        background: #ffffff;
     }
 }
 
 .abstract-link {
-  color: $accent;
+  color: #2ecc71;
   text-decoration: none;
   cursor: pointer;
+  font-weight: 500;
   &:hover {
-    color: $link-hover;
+    color: #27ae60;
     text-decoration: underline;
   }
 }
 
 .pdf-viewer {
   margin-top: 20px;
-  background: $background;
+  background: #ffffff;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   
-  embed {
+  iframe {
     width: 100%;
     height: 600px;
     border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    background: $white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #ffffff;
   }
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+h1 {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+h2 {
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #34495e;
 }
 
 #abstract-content- {
   transition: all 0.3s ease;
   overflow: hidden;
+}
+
+.blob-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.1;
+}
+
+.blob-1 {
+  background: #3498db;
+  top: -100px;
+  left: -100px;
+}
+
+.blob-2 {
+  background: #2ecc71;
+  top: 50%;
+  right: -100px;
+}
+
+.blob-3 {
+  background: #e74c3c;
+  bottom: -100px;
+  left: 50%;
+}
+
+.blob-4 {
+  background: #f1c40f;
+  top: 30%;
+  left: 30%;
 } 
