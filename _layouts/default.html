@@ -64,7 +64,11 @@
       font-size: 0.9em;
       display: inline-block;
       margin: 2px 0;
-      font-weight: normal;
+      font-weight: bold;
+      border: 1px solid #d4b996;
+      line-height: 1.5;
+      min-width: 60px;
+      text-align: center;
     }
     .video-link:hover {
       background-color: #d4b996;
@@ -153,9 +157,9 @@
                 {% endif %}
                 {% if post.abstract %}
                 {% if post.abstract contains 'http' %}
-                <a href="{{post.abstract}}" class="abstract-link" target="_blank">Abstract</a>
+                <a href="{{post.abstract}}" class="abstract-link">Abstract</a>
                 {% else %}
-                <a href="{{ site.baseurl }}{{ post.abstract }}" class="abstract-link" target="_blank">Abstract</a>
+                <a href="{{ site.baseurl }}{{ post.abstract }}" class="abstract-link">Abstract</a>
                 {% endif %}
                 {% endif %}
                 {% if post.code %}
