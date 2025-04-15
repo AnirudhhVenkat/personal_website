@@ -138,74 +138,45 @@
                 <div class="research-image">
                   <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
                 </div>
-                <div class="research-content">
-                  <h3>{{ post.title }}</h3>
-                  <p class="research-meta">
-                    {{ post.authors }} /
-                    {{ post.venue }} /
-                    {{ post.date | date: "%B %Y" }}
-                  </p>
-                  <p>{{ post.excerpt }}</p>
-                  <div class="research-links">
-                    {% if post.paper %}
-                    <a href="{{post.paper}}" class="paper-link" target="_blank">Paper</a> /
-                    {% endif %}
-                    {% if post.conference %}
-                    <a href="{{post.conference}}" class="conference-link" target="_blank">Conference Abstract</a> /
-                    {% endif %}
-                    {% if post.abstract %}
-                    <a href="{{post.abstract}}" class="abstract-link" target="_blank">Abstract</a> /
-                    {% endif %}
-                    {% if post.code %}
-                    <a href="{{post.code}}" class="code-link" target="_blank">Code</a> /
-                    {% endif %}
-                    {% if post.video %}
-                    <a href="{{post.video}}" class="video-link" target="_blank">Video</a> /
-                    {% endif %}
-                  </div>
-                </div>
               </div>
             </td>
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.doi %}
-              <a href="{{post.doi}}">doi</a> /
-              {% endif %}
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}" class="video-link" target="_blank">Video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.abstract %}
-              <a href="{{ site.baseurl }}{{ post.abstract }}" class="abstract-link">Abstract</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{ site.baseurl }}{{ post.poster }}" class="poster-link">Poster</a> /
-              {% endif %}
-              {% if post.presentation %}
-              <a href="{{ site.baseurl }}{{ post.presentation }}" class="presentation-link">Presentation</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
+              <p class="research-meta">
+                {{post.authors}} /
+                <em>{{post.venue}}</em> /
+                {{ post.date | date: "%Y" }}
+              </p>
+              <p>{{ post.excerpt }}</p>
+              <div class="research-links">
+                {% if post.paper %}
+                <a href="{{post.paper}}" class="paper-link" target="_blank">Paper</a> /
+                {% endif %}
+                {% if post.conference %}
+                <a href="{{post.conference}}" class="conference-link" target="_blank">Conference Abstract</a> /
+                {% endif %}
+                {% if post.abstract %}
+                <a href="{{post.abstract}}" class="abstract-link" target="_blank">Abstract</a> /
+                {% endif %}
+                {% if post.code %}
+                <a href="{{post.code}}" class="code-link" target="_blank">Code</a> /
+                {% endif %}
+                {% if post.video %}
+                <a href="{{post.video}}" class="video-link" target="_blank">Video</a> /
+                {% endif %}
+                {% if post.poster %}
+                <a href="{{ site.baseurl }}{{ post.poster }}" class="poster-link">Poster</a> /
+                {% endif %}
+                {% if post.presentation %}
+                <a href="{{ site.baseurl }}{{ post.presentation }}" class="presentation-link">Presentation</a> /
+                {% endif %}
+                {% if post.slides %}
+                <a href="{{post.slides}}">Slides</a> /
+                {% endif %}
+                {% if post.website %}
+                <a href="{{post.website}}">Website</a> /
+                {% endif %}
+              </div>
             </td>
           </tr>
           {% endif %}
