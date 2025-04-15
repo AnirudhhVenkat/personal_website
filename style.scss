@@ -4,6 +4,8 @@
 html, body {
   background-color: #f8f4e8 !important;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11,8 +13,7 @@ body {
   color: #2d3748;
   line-height: 1.5;
   font-size: 16px;
-  margin: 0;
-  padding: 0;
+  background-color: #f8f4e8 !important;
 }
 
 a {
@@ -186,6 +187,13 @@ h3 {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f8f4e8 !important;
+}
+
 .blob-container {
   position: fixed;
   top: 0;
@@ -194,7 +202,7 @@ h3 {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  background-color: #f8f4e8;
+  background-color: #f8f4e8 !important;
 }
 
 .blob {
