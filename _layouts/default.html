@@ -152,7 +152,11 @@
                 <a href="{{post.conference}}" class="conference-link" target="_blank">Conference Abstract</a>
                 {% endif %}
                 {% if post.abstract %}
+                {% if post.abstract contains 'http' %}
+                <a href="{{post.abstract}}" class="abstract-link" target="_blank">Abstract</a>
+                {% else %}
                 <a href="{{ site.baseurl }}{{ post.abstract }}" class="abstract-link" target="_blank">Abstract</a>
+                {% endif %}
                 {% endif %}
                 {% if post.code %}
                 <a href="{{post.code}}" class="code-link" target="_blank">Code</a>
