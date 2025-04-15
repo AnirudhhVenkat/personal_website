@@ -8,7 +8,7 @@ author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>, Divya Sthanu Kumar, Nico Spiller, Nino Mancini, Kate Maier, Kazuma Murakami, Jensen Teel, Salil S. Bidaye
 venue: Wilkes Honors College Summer Research Symposium, July 18, 2024, Jupiter, FL
 abstract: /pdfs/AVenkat_Magar_Project.pdf
-poster: /pdfs/AVenkat_Magar_Project.pdf
+poster: /pdfs/Ani_Summer_Symposium_Poster.pdf
 ---
 
 We analyzed the complex leg kinematics of Drosophila during turning maneuvers and created models that use non linear dimensionality reduction to visualize kinematics in embeddings. 
