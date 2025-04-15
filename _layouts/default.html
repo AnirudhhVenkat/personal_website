@@ -192,10 +192,42 @@
         <div class="pdfs">
             {% for pdf in page.pdfs %}
             <div class="pdf">
-                <iframe src="{{ site.baseurl }}{{ pdf }}" width="100%" height="600px" style="border: none;"></iframe>
+                <div class="pdf-preview" onclick="openPdfModal('{{ site.baseurl }}{{ pdf }}')">
+                    <div class="pdf-icon">📄</div>
+                </div>
             </div>
             {% endfor %}
         </div>
+        <div class="pdf-modal" id="pdfModal">
+            <div class="modal-content">
+                <button class="close-button" onclick="closePdfModal()">×</button>
+                <iframe id="pdfFrame" src=""></iframe>
+            </div>
+        </div>
+        <script>
+            function openPdfModal(pdfUrl) {
+                const modal = document.getElementById('pdfModal');
+                const frame = document.getElementById('pdfFrame');
+                frame.src = pdfUrl;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closePdfModal() {
+                const modal = document.getElementById('pdfModal');
+                const frame = document.getElementById('pdfFrame');
+                modal.classList.remove('active');
+                frame.src = '';
+                document.body.style.overflow = '';
+            }
+            
+            // Close modal when clicking outside the content
+            document.getElementById('pdfModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closePdfModal();
+                }
+            });
+        </script>
         {% endif %}
 
         {{ content }}
