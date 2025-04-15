@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Human Gait Recognition Using Pose Estimation"
-date: 2025-07-01 22:21:59 +0000
+date: 2025-04-01 22:21:59 +0000
 image: /images/gait-recognition.webp
 categories: research machine-learning computer-vision
 author: Anirudhh Venkat
