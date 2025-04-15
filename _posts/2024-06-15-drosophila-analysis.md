@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Predicting Joint Angles During Locomotion in Drosophila"
-date: 2024-06-15 22:21:59 +0000
+date: 2025-06-15 22:21:59 +0000
 image: /images/drosophila-turn.gif
 categories: research neuroscience machine-learning
 author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>, Dr. Salil Bidaye
-venue: 4th Annual Senior Showcase -- Max Planck Florida Institute for Neuroscience & FAU High School Jupiter Campus in Partnership with Max Planck Academy, 2025
+venue: 4th Annual Senior Showcase -- Max Planck Florida Institute for Neuroscience & FAU High School Jupiter Campus in Partnership with Max Planck Academy
 abstract: /pdfs/AVenkat_Capstone_Abstract.pdf
 video: https://www.youtube.com/watch?v=6pxGmQ1s_sI
 ---

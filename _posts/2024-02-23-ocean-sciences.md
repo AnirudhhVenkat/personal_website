@@ -6,7 +6,7 @@ image: /images/ocean-sciences.webp
 categories: research education oceanography
 author: Anirudhh Venkat
 authors: Hanna Bridgham, Eric Morales, <strong>Anirudhh Venkat</strong>, Tricia Meredith, Tim Moore, Jordon Beckler
-venue: Ocean Sciences Meeting 2024
+venue: Ocean Sciences Meeting
 abstract: /pdfs/AVenkat_OSM_Abstract.pdf
 ---
 

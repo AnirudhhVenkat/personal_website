@@ -6,7 +6,7 @@ image: /images/Ani_cebra.jpg
 categories: research neuroscience kinematics
 author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>, Divya Sthanu Kumar, Nico Spiller, Nino Mancini, Kate Maier, Kazuma Murakami, Jensen Teel, Salil S. Bidaye
-venue: Wilkes Honors College Summer Research Symposium, 2024
+venue: Wilkes Honors College Summer Research Symposium
 abstract: /pdfs/AVenkat_Magar_Project.pdf
 poster: /pdfs/Ani_Summer_Symposium_Poster.pdf
 ---
