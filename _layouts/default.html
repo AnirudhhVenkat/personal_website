@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+  <title>{{ site.name }}</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <style>
+    video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    img[src$=".gif"] {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .research-image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="blob-container">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h1>
+                {{ site.name }}
+              </h1>
+              <p>
+                I am an undergraduate student at Florida Atlantic University High School, working in partnership with Max Planck Academy. My research interests lie at the intersection of artificial intelligence, neuroscience, and environmental science. I have experience in machine learning, data analysis, and scientific research across multiple domains.
+              </p>
+              <p>
+                I am currently working on several exciting projects, including:
+              </p>
+              <ul>
+                <li>Predicting joint angles during locomotion in Drosophila at the Bidaye Lab</li>
+                <li>Human gait recognition using pose estimation at the Rubin and Cindy Gruber AI Sandbox</li>
+                <li>Enhancing the RadImageNet dataset with new modalities and architectures as part of CAP6619 (Deep Learning)</li>
+              </ul>
+              <p style="text-align:center">
+                <a href="mailto:{{ site.footer-links.email }}">Email</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user={{ site.footer-links.scholar }}">Scholar</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}/">LinkedIn</a> &nbsp;/&nbsp;
+                <a href="https://github.com/{{ site.footer-links.github }}/">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="{{ site.baseurl }}{{ site.avatar }}">
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5%;width:40%;vertical-align:middle;min-width:120px">
+              {% if post.video %}
+                <div class="video-container">
+                  <video controls>
+                    <source src="{{ site.baseurl }}{{ post.video }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              {% else %}
+                <img class="research-image" src="{{ site.baseurl }}{{ post.image }}" alt="project image" />
+              {% endif %}
+            </td>
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.doi %}
+              <a href="{{post.doi}}">doi</a> /
+              {% endif %}
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.abstract %}
+              <a href="{{ site.baseurl }}{{ post.abstract }}" class="abstract-link">Abstract</a>
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        {% if page.pdfs %}
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Publications</h2>
+            </td>
+          </tr>
+        </table>
+        <div class="pdfs">
+            {% for pdf in page.pdfs %}
+            <div class="pdf">
+                <embed src="{{ site.baseurl }}/{{ pdf }}" type="application/pdf" width="100%" height="600px">
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if page.images %}
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Research Visualizations</h2>
+            </td>
+          </tr>
+        </table>
+        <div class="images">
+            {% for image in page.images %}
+            <div class="image">
+                <img src="{{ site.baseurl }}/{{ image }}" alt="{{ page.title }} image">
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {{ content }}
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    (function() {
+        var links = document.links;
+        for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+            if (links[i].hostname != window.location.hostname) {
+                links[i].target = '_blank';
+                links[i].rel = 'noopener noreferrer';
+            }
+        }
+    })();
+  </script>
+
+  <script>
+    function toggleAbstract(pdfPath) {
+      var content = document.getElementById('abstract-content-' + pdfPath.replace(/\//g, '-'));
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
+

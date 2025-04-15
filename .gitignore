@@ -1,0 +1,38 @@
+# Jekyll build output
+_site
+
+# macOS system files
+.DS_Store
+
+# Jekyll cache and metadata
+.jekyll-cache
+.jekyll-metadata
+
+# Bundler config and installed gems
+.bundle
+vendor
+
+# Sass cache
+.sass-cache
+
+# Dependency directories
+node_modules
+
+# npm package file (usually version controlled, but up to you)
+# package.json
+
+# Keep favicon.ico version controlled
+# favicon.ico
+
+# Ruby environment file
+.ruby-version
+
+# Environment normalization
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Log files
+*.log

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav style="width: 100%; background-color: transparent; padding: 15px; font-family: 'Lato', sans-serif; display: flex; align-items: center;">
+      <a href="{{ site.baseurl }}/" style="text-decoration: none; font-size: 24px; color: #FFFFFF;">
+        Kia Ghods
+      </a>  
+      </nav>      
+  <div class="blob-container">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <div style="max-width: 800px; margin: 0 auto;">
+    {{ content }}
+  </div>
+
+  <script>
+    (function() {
+        var links = document.links;
+        for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+            if (links[i].hostname != window.location.hostname) {
+                links[i].target = '_blank';
+                links[i].rel = 'noopener noreferrer';
+            }
+        }
+    })();
+  </script>
+</body>
+
+</html>
