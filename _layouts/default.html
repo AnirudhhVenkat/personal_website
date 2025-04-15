@@ -211,6 +211,8 @@
                 frame.src = pdfUrl;
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
+                // Add class to body to prevent scrolling
+                document.body.classList.add('modal-open');
             }
             
             function closePdfModal() {
@@ -219,11 +221,20 @@
                 modal.classList.remove('active');
                 frame.src = '';
                 document.body.style.overflow = '';
+                // Remove class from body
+                document.body.classList.remove('modal-open');
             }
             
             // Close modal when clicking outside the content
             document.getElementById('pdfModal').addEventListener('click', function(e) {
                 if (e.target === this) {
+                    closePdfModal();
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
                     closePdfModal();
                 }
             });
