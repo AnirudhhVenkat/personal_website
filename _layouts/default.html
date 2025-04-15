@@ -126,7 +126,6 @@
           {% for post in site.posts %}
           {% assign categories = post.categories | join: " " %}
           {% if categories contains 'research' %}
-          {% assign current_date = 'now' | date: '%Y-%m-%d' %}
           <tr>
             <td style="padding:2.5%;width:40%;vertical-align:middle;min-width:120px">
               <div class="research-item">
