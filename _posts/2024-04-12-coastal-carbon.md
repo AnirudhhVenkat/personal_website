@@ -2,7 +2,7 @@
 layout: post
 title: "Quantifying Storm Impacts on Coastal Carbon Budgets"
 date: 2024-04-12 22:21:59 +0000
-image: /images/coastal-carbon.webp
+image: /images/CDOM.png
 categories: research environmental-science data-science
 author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>, Hanna Bridgham, Eric Morales, Jordon Beckler
