@@ -217,19 +217,19 @@ a:hover {
 }
 
 .video-link {
-  color: #c2ab83;
+  color: #2d3748;
   text-decoration: none;
   cursor: pointer;
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
-  background: #e6c7a9;
+  background: rgba(230, 199, 169, 0.3);
   transition: all 0.3s ease;
 }
 
 .video-link:hover {
-  color: #b09d70;
-  background: #d4b996;
+  color: #2d3748;
+  background: rgba(230, 199, 169, 0.4);
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 2px 4px rgba(212, 185, 150, 0.2);
