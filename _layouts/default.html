@@ -118,16 +118,37 @@
           {% if cat == 'research' %}
           <tr>
             <td style="padding:2.5%;width:40%;vertical-align:middle;min-width:120px">
-              {% if post.video %}
-                <div class="video-container">
-                  <video controls>
-                    <source src="{{ site.baseurl }}{{ post.video }}" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+              <div class="research-item">
+                <div class="research-image">
+                  <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
                 </div>
-              {% else %}
-                <img class="research-image" src="{{ site.baseurl }}{{ post.image }}" alt="project image" />
-              {% endif %}
+                <div class="research-content">
+                  <h3>{{ post.title }}</h3>
+                  <p class="research-meta">
+                    {{ post.authors }} /
+                    {{ post.venue }} /
+                    {{ post.date | date: "%B %Y" }}
+                  </p>
+                  <p>{{ post.excerpt }}</p>
+                  <div class="research-links">
+                    {% if post.paper %}
+                    <a href="{{post.paper}}" class="paper-link" target="_blank">Paper</a> /
+                    {% endif %}
+                    {% if post.conference %}
+                    <a href="{{post.conference}}" class="conference-link" target="_blank">Conference Abstract</a> /
+                    {% endif %}
+                    {% if post.abstract %}
+                    <a href="{{post.abstract}}" class="abstract-link" target="_blank">Abstract</a> /
+                    {% endif %}
+                    {% if post.code %}
+                    <a href="{{post.code}}" class="code-link" target="_blank">Code</a> /
+                    {% endif %}
+                    {% if post.video %}
+                    <a href="{{post.video}}" class="video-link" target="_blank">Video</a> /
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
             </td>
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h3>{{post.title}}</h3>
