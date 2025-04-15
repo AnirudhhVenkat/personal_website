@@ -10,4 +10,4 @@ venue: 2024 Ocean Sciences Meeting, February 23, 2024, New Orleans, LA
 abstract: /pdfs/AVenkat_OSM_Abstract.pdf
 ---
 
-We focused on engaging high-school students in ocean sciences through a combination of remote instruction and in-person workshops. As part of the NASA MUREP program, we developed research modules for monitoring carbon dynamics in coastal margins using satellite remote sensing. We created workshop materials, supervising students, and developing presentations, integrating hands-on learning with big data analysis, providing students with valuable experience in ocean science research and data analysis. 
+We focused on engaging high-school students in ocean sciences through a combination of remote instruction and in-person workshops.

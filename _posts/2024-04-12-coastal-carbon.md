@@ -10,4 +10,4 @@ venue: Wilkes Honors College Spring Research Symposium, April 12, 2024, Jupiter,
 abstract: /pdfs/AVenkat_NASAMUREP_Abstract.pdf
 ---
 
-We analyzed the impact of storms on coastal carbon budgets using NASA satellite data. Our work revealed significant correlations between storm events and sediment-derived DOC distribution in the Gulf of Mexico. Using Python, we developed visualization tools to track DOC patterns and oceanographic parameters, providing new insights into coastal carbon dynamics. 
+We analyzed the impact of storms on coastal carbon budgets using NASA satellite data. Our work revealed correlations between storm events and sediment-derived DOC distribution in the Gulf of Mexico. 

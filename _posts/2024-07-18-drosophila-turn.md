@@ -10,4 +10,4 @@ venue: Wilkes Honors College Summer Research Symposium, July 18, 2024, Jupiter, 
 abstract: /pdfs/AVenkat_Magar_Project.pdf
 ---
 
-We analyzed the complex leg kinematics of Drosophila during turning maneuvers. I developed a pipeline for analyzing flies walking on slippery surfaces, including image annotation in DeepLabCut and code for calculating step-cycles. Using Python, I implemented a model that fits a plane to a fly's legs and calculates stepping patterns based on joint angle peaks and leg-to-plane distances. I then created models that use non linear dimensionality reduction to visualize kinematics in embeddings. 
+We analyzed the complex leg kinematics of Drosophila during turning maneuvers and created models that use non linear dimensionality reduction to visualize kinematics in embeddings. 
