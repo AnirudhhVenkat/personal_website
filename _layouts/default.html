@@ -55,20 +55,6 @@
     .research-item {
       max-width: 300px;
     }
-    .video-link {
-      color: #333;
-      background-color: #f0f0f0;
-      padding: 2px 6px;
-      border-radius: 3px;
-      text-decoration: none;
-      font-size: 0.9em;
-      display: inline-block;
-      margin: 2px 0;
-    }
-    .video-link:hover {
-      background-color: #e0e0e0;
-      text-decoration: none;
-    }
   </style>
 
 </head>
@@ -137,37 +123,38 @@
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <p class="research-meta">
-                {{post.authors}} /
+                {{post.authors}}
+                <br>
                 <em>{{post.venue}}</em>
               </p>
               <p>{{ post.excerpt }}</p>
               <div class="research-links">
                 {% if post.paper %}
-                <a href="{{post.paper}}" class="paper-link" target="_blank">Paper</a> /
+                <a href="{{post.paper}}" class="paper-link" target="_blank">Paper</a>
                 {% endif %}
                 {% if post.conference %}
-                <a href="{{post.conference}}" class="conference-link" target="_blank">Conference Abstract</a> /
+                <a href="{{post.conference}}" class="conference-link" target="_blank">Conference Abstract</a>
                 {% endif %}
                 {% if post.abstract %}
-                <a href="{{post.abstract}}" class="abstract-link" target="_blank">Abstract</a> /
+                <a href="{{post.abstract}}" class="abstract-link" target="_blank">Abstract</a>
                 {% endif %}
                 {% if post.code %}
-                <a href="{{post.code}}" class="code-link" target="_blank">Code</a> /
+                <a href="{{post.code}}" class="code-link" target="_blank">Code</a>
                 {% endif %}
                 {% if post.video %}
-                <a href="{{post.video}}" class="video-link" target="_blank">Video</a> /
+                <a href="{{post.video}}" class="abstract-link" target="_blank">Video</a>
                 {% endif %}
                 {% if post.poster %}
-                <a href="{{ site.baseurl }}{{ post.poster }}" class="poster-link">Poster</a> /
+                <a href="{{ site.baseurl }}{{ post.poster }}" class="poster-link">Poster</a>
                 {% endif %}
                 {% if post.presentation %}
-                <a href="{{ site.baseurl }}{{ post.presentation }}" class="presentation-link">Presentation</a> /
+                <a href="{{ site.baseurl }}{{ post.presentation }}" class="presentation-link">Presentation</a>
                 {% endif %}
                 {% if post.slides %}
-                <a href="{{post.slides}}">Slides</a> /
+                <a href="{{post.slides}}">Slides</a>
                 {% endif %}
                 {% if post.website %}
-                <a href="{{post.website}}">Website</a> /
+                <a href="{{post.website}}">Website</a>
                 {% endif %}
               </div>
             </td>
