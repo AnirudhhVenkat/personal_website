@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Predicting Joint Angles During Locomotion in Drosophila"
-date: 2025-06-15 22:21:59 +0000
+date: 2025-04-01 22:21:59 +0000
 image: /images/drosophila-turn.gif
 categories: research neuroscience machine-learning
 author: Anirudhh Venkat
