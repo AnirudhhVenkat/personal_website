@@ -178,6 +178,44 @@ a:hover {
   box-shadow: 0 2px 4px rgba(45, 106, 79, 0.1);
 }
 
+.poster-link {
+  color: #6b46c1;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(107, 70, 193, 0.1);
+  transition: all 0.3s ease;
+}
+
+.poster-link:hover {
+  color: #553c9a;
+  background: rgba(107, 70, 193, 0.2);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(107, 70, 193, 0.1);
+}
+
+.presentation-link {
+  color: #c53030;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(197, 48, 48, 0.1);
+  transition: all 0.3s ease;
+}
+
+.presentation-link:hover {
+  color: #9b2c2c;
+  background: rgba(197, 48, 48, 0.2);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(197, 48, 48, 0.1);
+}
+
 h1, h2, h3 {
   color: #2d3748;
 }
