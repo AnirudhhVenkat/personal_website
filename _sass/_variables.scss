@@ -2,19 +2,19 @@
 // VARIABLES
 //
 
+// Fonts
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 // Colors
-$primary: #2c3e50;      // Deep blue-gray
-$accent: #3498db;       // Bright blue
-$secondary: #e74c3c;    // Soft red for emphasis
+$background: #f0f7ff;
+$text: #2c3e50;
+$link: #4a6baf;
+$link-hover: #3a5a9f;
+$accent: #4a6baf;
+$white: #ffffff;
 
 // Background and Text
-$background: #f8f9fa;   // Very light gray
-$text: #2c3e50;        // Dark blue-gray
 $text-light: #7f8c8d;  // Medium gray for secondary text
-
-// Links
-$link: #3498db;        // Bright blue
-$link-hover: #2980b9;  // Darker blue for hover
 
 // Grays
 $black: #000;
@@ -22,11 +22,9 @@ $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
-$white: #fff;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
