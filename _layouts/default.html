@@ -64,6 +64,7 @@
       font-size: 0.9em;
       display: inline-block;
       margin: 2px 0;
+      font-weight: normal;
     }
     .video-link:hover {
       background-color: #d4b996;
@@ -151,7 +152,7 @@
                 <a href="{{post.conference}}" class="conference-link" target="_blank">Conference Abstract</a>
                 {% endif %}
                 {% if post.abstract %}
-                <a href="{{post.abstract}}" class="abstract-link" target="_blank">Abstract</a>
+                <a href="{{ site.baseurl }}{{ post.abstract }}" class="abstract-link" target="_blank">Abstract</a>
                 {% endif %}
                 {% if post.code %}
                 <a href="{{post.code}}" class="code-link" target="_blank">Code</a>
