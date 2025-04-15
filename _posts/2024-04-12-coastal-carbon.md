@@ -8,6 +8,7 @@ author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>, Hanna Bridgham, Eric Morales, Jordon Beckler
 venue: Wilkes Honors College Spring Research Symposium, April 12, 2024, Jupiter, FL
 abstract: /pdfs/AVenkat_NASAMUREP_Abstract.pdf
+poster: /pdfs/WHC_Spring_Symposium_Poster.pdf
 ---
 
 We analyzed the impact of storms on coastal carbon budgets using NASA satellite data. Our work revealed correlations between storm events and sediment-derived DOC distribution in the Gulf of Mexico. 
