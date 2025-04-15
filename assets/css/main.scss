@@ -1,18 +1,45 @@
+@import "reset", "variables", "highlights", "svg-icons";
+
+html {
+  background-color: $background;
+}
+
+body {
+  font-family: $helveticaNeue;
+  color: $text;
+  line-height: 1.5;
+  font-size: 16px;
+  background-color: $background;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+  &:hover {
+    color: $link-hover;
+    text-decoration: underline;
+  }
+}
+
 .images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
+    padding: 0 2.5%;
 }
 
 .image {
     max-width: 100%;
+    width: 100%;
     img {
         max-width: 100%;
         height: auto;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -22,6 +49,7 @@
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
+    padding: 0 2.5%;
 }
 
 .pdf {
@@ -32,25 +60,39 @@
         height: 600px;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        display: block;
+        margin: 0 auto;
     }
 }
 
 .abstract-link {
-  color: #1772d0;
+  color: $accent;
   text-decoration: none;
   cursor: pointer;
   &:hover {
+    color: $link-hover;
     text-decoration: underline;
   }
 }
 
 .pdf-viewer {
   margin-top: 20px;
-  iframe {
+  background: $background;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  embed {
     width: 100%;
     height: 600px;
     border: none;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: $white;
   }
+}
+
+#abstract-content- {
+  transition: all 0.3s ease;
+  overflow: hidden;
 } 

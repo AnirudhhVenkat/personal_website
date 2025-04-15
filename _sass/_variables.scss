@@ -1,10 +1,20 @@
-
 //
 // VARIABLES
 //
 
 // Colors
-$blue: #4183C4;
+$primary: #2c3e50;      // Deep blue-gray
+$accent: #3498db;       // Bright blue
+$secondary: #e74c3c;    // Soft red for emphasis
+
+// Background and Text
+$background: #f8f9fa;   // Very light gray
+$text: #2c3e50;        // Dark blue-gray
+$text-light: #7f8c8d;  // Medium gray for secondary text
+
+// Links
+$link: #3498db;        // Bright blue
+$link-hover: #2980b9;  // Darker blue for hover
 
 // Grays
 $black: #000;
