@@ -217,22 +217,22 @@ a:hover {
 }
 
 .video-link {
-  color: #2d6a4f;
+  color: #2563eb;
   text-decoration: none;
   cursor: pointer;
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
-  background: rgba(45, 106, 79, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   transition: all 0.3s ease;
 }
 
 .video-link:hover {
-  color: #1b4332;
-  background: rgba(45, 106, 79, 0.2);
+  color: #1d4ed8;
+  background: rgba(37, 99, 235, 0.2);
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(45, 106, 79, 0.1);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
 }
 
 h1, h2, h3 {
