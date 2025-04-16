@@ -6,7 +6,7 @@ image: /images/result (1).png
 categories: research neuroscience
 author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>
-abstract: I developed a novel pipeline for analyzing dendritic spine morphology using deep learning-based segmentation. The approach combines convolutional neural networks with traditional image processing techniques to accurately quantify spine density, length, and head diameter across different experimental conditions. This work provides a robust framework for studying synaptic plasticity and its role in learning and memory.
+venue: Independent Project
 presentation: /pdfs/Spines.pdf
 ---
 
