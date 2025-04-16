@@ -2,7 +2,6 @@
 layout: post
 title: "Enhancing RadImageNet"
 date: 2025-04-02 22:21:59 +0000
-image: /images/radimagenet.webp
 categories: research deep-learning medical-imaging
 author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>
