@@ -8,4 +8,4 @@ authors: <strong>Anirudhh Venkat</strong>
 venue: Independent Project
 ---
 
-Stay tuned for updates on our progress and findings! 
+Stay tuned for updates! 
