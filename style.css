@@ -310,28 +310,99 @@ h3 {
   border-radius: 50%;
   filter: blur(50px);
   opacity: 0.3;
+  animation: float 15s ease-in-out infinite;
 }
 
 .blob-1 {
   background: #e6c7a9;
   top: -100px;
   left: -100px;
+  animation-delay: 0s;
 }
 
 .blob-2 {
   background: #d4b996;
   top: 50%;
   right: -100px;
+  animation-delay: -5s;
 }
 
 .blob-3 {
   background: #c2ab83;
   bottom: -100px;
   left: 50%;
+  animation-delay: -10s;
 }
 
 .blob-4 {
   background: #b09d70;
   top: 30%;
   left: 30%;
+  animation-delay: -15s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(30px, -20px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-20px, 20px) rotate(240deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon i {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover i {
+  transform: scale(1.1);
+}
+
+/* Specific colors for each social icon on hover */
+.social-icon[href*="github"]:hover {
+  color: #333;
+  background: #ffffff;
+}
+
+.social-icon[href*="linkedin"]:hover {
+  color: #0077b5;
+  background: #ffffff;
+}
+
+
+.social-icon[href*="mailto"]:hover {
+  color: #ea4335;
+  background: #ffffff;
 }
