@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enhancing RadImageNet: Multi-Modal Medical Imaging Classification"
+title: "Enhancing RadImageNet"
 date: 2025-04-02 22:21:59 +0000
 image: /images/radimagenet.webp
 categories: research deep-learning medical-imaging
