@@ -11,6 +11,6 @@ abstract: /pdfs/AVenkat_Capstone_Abstract.pdf
 video: https://www.youtube.com/watch?v=6pxGmQ1s_sI
 ---
 
-We developed a novel approach to predict joint angles in walking Drosophila using treadmill velocity data. I recently presented on our progress at the Max Planck Florida Institute for Neuroscience. 
+We developed a novel approach to predict joint angles in walking Drosophila using treadmill velocity data. I recently presented on our progress at the [Max Planck Florida Institute for Neuroscience](https://mpfi.org/). 
 
 Stay tuned for updates on our progress and findings!
