@@ -372,6 +372,7 @@ h3 {
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
+  border-radius: 0;
 }
 
 .social-icon:hover {
