@@ -393,16 +393,20 @@ h3 {
 /* Specific colors for each social icon on hover */
 .social-icon[href*="github"]:hover {
   color: #333;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .social-icon[href*="linkedin"]:hover {
   color: #0077b5;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
 }
 
+.social-icon[href*="twitter"]:hover {
+  color: #1da1f2;
+  background: rgba(255, 255, 255, 0.9);
+}
 
 .social-icon[href*="mailto"]:hover {
   color: #ea4335;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
 }
