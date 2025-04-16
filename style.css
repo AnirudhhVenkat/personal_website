@@ -180,17 +180,17 @@ a:hover {
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
-  background: #2d6a4f;
+  background: rgba(45, 106, 79, 0.8);
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
 }
 
 .abstract-link:hover {
   color: #ffffff;
+  background: rgba(45, 106, 79, 0.9);
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(45, 106, 79, 0.5);
-  background: #1b4332;
+  box-shadow: 0 2px 4px rgba(45, 106, 79, 0.3);
 }
 
 .poster-link {
@@ -200,17 +200,17 @@ a:hover {
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
-  background: #6b46c1;
+  background: rgba(107, 70, 193, 0.8);
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
 }
 
 .poster-link:hover {
   color: #ffffff;
+  background: rgba(107, 70, 193, 0.9);
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(107, 70, 193, 0.5);
-  background: #553c9a;
+  box-shadow: 0 2px 4px rgba(107, 70, 193, 0.3);
 }
 
 .presentation-link {
@@ -220,17 +220,17 @@ a:hover {
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
-  background: #c53030;
+  background: rgba(197, 48, 48, 0.8);
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
 }
 
 .presentation-link:hover {
   color: #ffffff;
+  background: rgba(197, 48, 48, 0.9);
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(197, 48, 48, 0.5);
-  background: #9b2c2c;
+  box-shadow: 0 2px 4px rgba(197, 48, 48, 0.3);
 }
 
 .video-link {
@@ -240,17 +240,17 @@ a:hover {
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 6px;
-  background: #2563eb;
+  background: rgba(37, 99, 235, 0.8);
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
 }
 
 .video-link:hover {
   color: #ffffff;
+  background: rgba(37, 99, 235, 0.9);
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.5);
-  background: #1d4ed8;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
 }
 
 h1, h2, h3, h4, h5, h6 {
