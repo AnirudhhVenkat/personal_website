@@ -6,7 +6,7 @@ categories: research machine-learning computer-vision
 author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>
 venue: Independent Project
-image: /videos/IMG_6024.mp4
+image: /images/IMG_6024.gif
 ---
 
 Stay tuned for updates! 
