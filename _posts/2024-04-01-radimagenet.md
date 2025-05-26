@@ -10,4 +10,4 @@ abstract: /pdfs/AVenkat_Transfer_Learning_Abstract.pdf
 venue: Submitted to IEEE-EMBS BHI
 ---
 
-We achieve better performance in radiological classification tasks through data augmentation, and also evalaute the addition of new modalities during pretraining, and a modern architecture (EfficientNetv2).
+We achieve better performance in radiological classification tasks through data augmentation, and also evaluate the addition of new modalities during pretraining, and a modern architecture (EfficientNetv2).
