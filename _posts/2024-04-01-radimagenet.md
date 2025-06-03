@@ -7,7 +7,7 @@ author: Anirudhh Venkat
 authors: <strong>Anirudhh Venkat</strong>
 image: /images/breastaugment.jpeg
 abstract: /pdfs/AVenkat_Transfer_Learning_Abstract.pdf
-venue: Submitted to MICAD
+venue: Submitted
 ---
 
 We achieve better performance in radiological classification tasks through data augmentation, and also evaluate the addition of new modalities during pretraining, and a modern architecture (EfficientNetv2).
