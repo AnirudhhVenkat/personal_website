@@ -131,7 +131,14 @@
                   {% if post.date %}{{ post.date | date: "%Y" }}{% endif %}
                 {% endif %}
               </p>
-              <p>{{ post.excerpt }}</p>
+              <p>
+                {% comment %}Prefer an explicit excerpt (frontmatter). If missing, fall back to the first words of the post content.{% endcomment %}
+                {% if post.excerpt and post.excerpt != "" %}
+                  {{ post.excerpt }}
+                {% else %}
+                  {{ post.content | strip_html | truncatewords: 40 }}
+                {% endif %}
+              </p>
               <div class="research-links">
                 {% if post.paper %}
                 <a href="{{post.paper}}" class="paper-link" target="_blank">Paper</a>
