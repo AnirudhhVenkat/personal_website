@@ -5,11 +5,11 @@ date: 2026-01-21 00:00:00 +0000
 categories: research machine-learning nlp
 author: Anirudhh Venkat
 authors: Zhenjiang Mao*, <strong>Anirudhh Venkat*</strong>, Artem Bisliouk, Akshat Kothiyal, Sindhura Kumbakonam Subramanian, Saithej Singhu, Ivan Ruchkin
-venue: arXiv preprint
+venue:
 image: /images/arxiv.png
 ---
 
-<p><a href="https://arxiv.org/abs/2601.13387" target="_blank" rel="noopener" style="display:inline-block;padding:8px 12px;border:1px solid #444;border-radius:6px;background:#f5f5f5;color:#111;text-decoration:none">arXiv</a></p>
+<p><a href="https://arxiv.org/abs/2601.13387" class="paper-link" target="_blank" rel="noopener">arXiv</a></p>
 
 Abstract
 

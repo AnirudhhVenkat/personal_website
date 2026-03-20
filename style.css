@@ -193,6 +193,27 @@ a:hover {
   box-shadow: 0 2px 4px rgba(45, 106, 79, 0.3);
 }
 
+/* Paper link button matches other research link buttons */
+.paper-link {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(45, 106, 79, 0.8);
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.paper-link:hover {
+  color: #ffffff;
+  background: rgba(45, 106, 79, 0.9);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(45, 106, 79, 0.3);
+}
+
 .poster-link {
   color: #ffffff;
   text-decoration: none;
