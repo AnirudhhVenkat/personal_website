@@ -4,7 +4,7 @@ title: "Confidence over Time: Confidence Calibration with Temporal Logic for Lar
 date: 2026-01-19 00:00:00 +0000
 categories: research machine-learning nlp
 author: Anirudhh Venkat
-authors: <strong>Zhenjiang Mao, Anirudhh Venkat, Artem Bisliouk, Akshat Kothiyal, Sindhura Kumbakonam Subramanian, Saithej Singhu, Ivan Ruchkin</strong>
+authors: <strong>Zhenjiang Mao*, Anirudhh Venkat*, Artem Bisliouk, Akshat Kothiyal, Sindhura Kumbakonam Subramanian, Saithej Singhu, Ivan Ruchkin</strong>
 venue: arXiv preprint
 image: /images/arxiv.png
 ---
