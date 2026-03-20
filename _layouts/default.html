@@ -125,7 +125,11 @@
               <p class="research-meta">
                 {{post.authors}}
                 <br>
-                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                {% if post.venue and post.venue != "" %}
+                  <em>{{post.venue}}</em>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
+                {% else %}
+                  {% if post.date %}{{ post.date | date: "%Y" }}{% endif %}
+                {% endif %}
               </p>
               <p>{{ post.excerpt }}</p>
               <div class="research-links">
@@ -272,4 +276,3 @@
 </body>
 
 </html>
-

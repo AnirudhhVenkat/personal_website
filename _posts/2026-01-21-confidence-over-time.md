@@ -7,6 +7,7 @@ author: Anirudhh Venkat
 authors: Zhenjiang Mao*, <strong>Anirudhh Venkat*</strong>, Artem Bisliouk, Akshat Kothiyal, Sindhura Kumbakonam Subramanian, Saithej Singhu, Ivan Ruchkin
 venue:
 image: /images/arxiv.png
+excerpt: "Characterizes stepwise confidence in LLM reasoning using Signal Temporal Logic and trains STL-informed blocks to produce better-calibrated confidence scores."
 ---
 
 <p><a href="https://arxiv.org/abs/2601.13387" class="paper-link" target="_blank" rel="noopener">arXiv</a></p>
@@ -18,3 +19,7 @@ Large Language Models (LLMs) increasingly rely on long-form, multi-step reasonin
 Cite
 
 Mao, Z., Venkat, A., Bisliouk, A., Kothiyal, A., Subramanian, S. K., Singhu, S., & Ruchkin, I. (2026). Confidence over Time: Confidence Calibration with Temporal Logic for Large Language Model Reasoning. arXiv:2601.13387. https://doi.org/10.48550/arXiv.2601.13387
+
+Awards
+
+UF Innovate Award at Warren B. Nelms Annual IoT Conference ($500)

@@ -5,8 +5,9 @@ date: 2026-01-20 00:00:00 +0000
 categories: research machine-learning nlp
 author: Anirudhh Venkat
 authors: Zhenjiang Mao*, <strong>Anirudhh Venkat*</strong>
-venue: ICASSP 2026 (accepted)
+venue: Accepted to IEEE ICASSP
 image: /images/arxiv.png
+excerpt: "A temporal-aware method for uncertainty quantification in LLMs that combines inter-step attention with a hidden confidence mechanism to improve calibration."
 ---
 
 <p><a href="https://arxiv.org/abs/2601.13368" class="paper-link" target="_blank" rel="noopener">arXiv</a></p>
