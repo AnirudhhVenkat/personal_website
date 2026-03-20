@@ -8,9 +8,8 @@ authors: Zhenjiang Mao*, <strong>Anirudhh Venkat*</strong>, Artem Bisliouk, Aksh
 venue:
 image: /images/arxiv.png
 ---
-
-<p><a href="https://arxiv.org/abs/2601.13387" class="paper-link" target="_blank" rel="noopener">arXiv</a></p>
-
 Characterizes stepwise confidence in LLM reasoning using Signal Temporal Logic and trains STL-informed blocks to produce better-calibrated confidence scores
 
 UF Innovate Award at Warren B. Nelms Annual IoT Conference
+
+<p><a href="https://arxiv.org/abs/2601.13387" class="paper-link" target="_blank" rel="noopener">arXiv</a></p>
