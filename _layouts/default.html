@@ -84,7 +84,7 @@
               </p>
               <ul>
                 <li>Evaluating confidence in LLMs at<a href="https://tea.ece.ufl.edu/" target="_blank" rel="noopener noreferrer">the TEA Lab</a></li>
-                <li>Theory of Mind Simulator at<a href="https://vercel-mirror-ten.vercel.app/" target="_blank" rel="noopener noreferrer">Gator AI</a></li>
+                <!-- <li>Theory of Mind Simulator at<a href="https://vercel-mirror-ten.vercel.app/" target="_blank" rel="noopener noreferrer">Gator AI</a></li> -->
               </ul>
               <p style="text-align:center">
                 <a href="mailto:{{ site.footer-links.email }}">Email</a> &nbsp;/&nbsp;
@@ -106,6 +106,7 @@
             </td>
           </tr>
         </table>
+        {% unless page.layout == 'post' %}
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
@@ -177,6 +178,7 @@
           {% endif %}
           {% endfor %}
         </table>
+        {% endunless %}
 
         {% if page.images %}
         <div class="images">
