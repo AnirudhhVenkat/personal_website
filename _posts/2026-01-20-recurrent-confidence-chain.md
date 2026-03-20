@@ -9,8 +9,7 @@ venue: ICASSP 2026 (accepted); arXiv preprint
 image: /images/arxiv.png
 ---
 
-Paper (arXiv): https://arxiv.org/abs/2601.13368
-PDF: https://arxiv.org/pdf/2601.13368.pdf
+<p><a href="https://arxiv.org/abs/2601.13368" target="_blank" rel="noopener" style="display:inline-block;padding:8px 12px;border:1px solid #444;border-radius:6px;background:#f5f5f5;color:#111;text-decoration:none">arXiv</a></p>
 
 Abstract
 
