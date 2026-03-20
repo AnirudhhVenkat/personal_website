@@ -6,8 +6,7 @@ categories: research machine-learning nlp
 author: Anirudhh Venkat
 authors: Zhenjiang Mao*, <strong>Anirudhh Venkat*</strong>
 venue: Accepted to IEEE ICASSP
-image: /images/arxiv.png
-excerpt: "A temporal-aware method for uncertainty quantification in LLMs that combines inter-step attention with a hidden confidence mechanism to improve calibration"
+image: /images/rcc.png
 paper: "https://arxiv.org/abs/2601.13368"
 ---
 
