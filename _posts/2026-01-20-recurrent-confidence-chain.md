@@ -7,7 +7,6 @@ author: Anirudhh Venkat
 authors: Zhenjiang Mao*, <strong>Anirudhh Venkat*</strong>
 venue: Accepted to IEEE ICASSP
 image: /images/rcc.png
-paper: "https://arxiv.org/abs/2601.13368"
 ---
 
 <p><a href="https://arxiv.org/abs/2601.13368" class="paper-link" target="_blank" rel="noopener">arXiv</a></p>
