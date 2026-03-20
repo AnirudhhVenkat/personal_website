@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Recurrent Confidence Chain: Temporal-Aware Uncertainty Quantification in Large Language Models"
-date: 2026-01-19 00:00:00 +0000
+date: 2026-01-20 00:00:00 +0000
 categories: research machine-learning nlp
 author: Anirudhh Venkat
-authors: <strong>Zhenjiang Mao*, Anirudhh Venkat*</strong>
-venue: arXiv preprint
+authors: Zhenjiang Mao*, <strong>Anirudhh Venkat*</strong>
+venue: ICASSP 2026 (accepted); arXiv preprint
 image: /images/arxiv.png
 ---
 
