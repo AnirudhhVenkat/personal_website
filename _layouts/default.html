@@ -83,7 +83,7 @@
                 I am currently working on two exciting projects:
               </p>
               <ul>
-                <li>Evaluating confidence in LLMs at<a href="https://tea.ece.ufl.edu/" target="_blank" rel="noopener noreferrer">the TEA Lab</a></li>
+                <li>Evaluating uncertainty in LLM Agents at<a href="https://tea.ece.ufl.edu/" target="_blank" rel="noopener noreferrer">the TEA Lab</a></li>
                 <!-- <li>Theory of Mind Simulator at<a href="https://vercel-mirror-ten.vercel.app/" target="_blank" rel="noopener noreferrer">Gator AI</a></li> -->
               </ul>
               <p style="text-align:center">
@@ -107,6 +107,7 @@
           </tr>
         </table>
         
+        {% if page.url == '/' or page.url == '/index.html' or page.permalink == '/' %}
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
