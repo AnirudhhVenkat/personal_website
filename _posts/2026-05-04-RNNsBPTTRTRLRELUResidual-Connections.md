@@ -22,6 +22,7 @@ This is why **recurrent neural networks (RNNs)** were created; they employ hidde
 $$
 \underbrace{h_t}_{\text{Current Hidden State}} = \sigma ( \underbrace{W_{hh} h_{t-1}}_{\text{Previous Hidden State}} + \underbrace{W_{xh} x_t}_{\text{Current Input}} + \underbrace{b_h}_{\text{Bias}} )
 $$
+
 The current hidden state is then multiplied by another weight matrix and added to another bias term to form the layer's output. Similar to before, the weight matrix and bias term are adjusted by the network to control how the current hidden state influences the layer's output. 
 
 $$
@@ -35,8 +36,10 @@ Since the current hidden state $h_t$ is a function of the previous hidden state 
 **Base Case: $t=1$**
 
 We can see that $h_1$ encodes the first input $x_1$.
+
 $$ \underbrace{h_{1}}_{\text{First Computed State}} = \sigma ( \underbrace{W_{hh} h_{0}}_{\text{Initial Hidden State}} + \underbrace{W_{xh} x_{1}}_{\text{First Input}} + \underbrace{b_h}_{\text{Bias}} ) $$
 $$h_1 = f(x_1)$$
+
 **Inductive Step: $t\Rightarrow t+1$**
 
 We assume that $h_t$ encodes all previous inputs by definition.
@@ -68,6 +71,7 @@ This contrasts to FFNs, where the hidden state at timestep $t$ contains a repres
 $$\underbrace{h_t^{(1)}}_{\text{First Layer Output}} = \sigma^{(1)} ( \underbrace{W^{(1)} \cdot x_t}_{\text{Current Input}} + b^{(1)} )$$
 
 Even though the first layer's output permeates throughout the network's layers for each layer $l$, $h_t$ is still only a function of $x_t$.
+
 $$ \underbrace{h_t^{(l)}}_{\text{Layer Output}} = \sigma^{(l)} ( \underbrace{W^{(l)} \cdot h_t^{(l-1)}}_{\text{Previous Layer Output}} + {b^{(l)}} ) $$
 $${h_t^{(l)}=f(x_t)}$$
 
