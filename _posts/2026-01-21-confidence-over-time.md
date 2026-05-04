@@ -5,6 +5,7 @@ date: 2026-01-21 00:00:00 +0000
 categories: research machine-learning nlp
 author: Anirudhh Venkat
 authors: Zhenjiang Mao*, <strong>Anirudhh Venkat*</strong>, Artem Bisliouk, Akshat Kothiyal, Sindhura Kumbakonam Subramanian, Saithej Singhu, Ivan Ruchkin
+venue: Accepted to Findings of ACL
 image: /images/cot.png
 ---
 
