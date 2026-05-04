@@ -9,7 +9,7 @@ author: Anirudhh Venkat
 
 *The following is a brief history of recurrent networks, discussing RNNs and optimizers. My intention in writing this is to make the basics behind recurrent networks as digestible as possible, however I assume prerequisite knowledge of Calculus 1 and basic machine learning.*   
 
-# Recurrent Neural Networks
+## Recurrent Neural Networks
 
 We sometimes find ourselves able to predict the next word coming out of someones mouth. For example, if I were to say to you "Let's go shopping for clothes at the *blank*," what would you think comes next? 
 
