@@ -21,6 +21,25 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" type="text/css">
 
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    table {
+      table-layout: fixed;
+      width: 100%;
+    }
+    td {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      max-width: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
   <!-- MathJax for LaTeX rendering -->
   <script>
     MathJax = {
@@ -51,9 +70,9 @@
     <div class="blob blob-4"></div>
   </div>
 
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;table-layout:fixed;">
     <tr>
-      <td style="padding:2.5%">
+      <td style="padding:2.5%;overflow-wrap:break-word;word-wrap:break-word;">
 
         <p><a href="{{ site.baseurl }}/">← Back to home</a></p>
 

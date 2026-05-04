@@ -55,7 +55,7 @@ $$
 
 By substituting $f(x_t,x_{t-1},...,x_2,x_1)$ for $h_t$, we have 
 
-$${{{h_{t+1}} = \sigma ( {W_{hh} f(x_t,x_{t-1},...,x_2,x_1)} + {W_{xh} x_{t+1}}} + {b_h}})$$
+$$h_{t+1} = \sigma ( W_{hh} f(x_t, x_{t-1}, \dots, x_1) + W_{xh} x_{t+1} + b_h )$$
 
 Because $f(x_t,x_{t-1},...,x_2,x_1)$ is a function of $x_t,x_{t-1},...,x_2,x_1$, and $x_{t+1}$ is reflexively a function of $x_{t+1}$,
 
