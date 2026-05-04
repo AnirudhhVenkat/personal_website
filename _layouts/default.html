@@ -55,6 +55,48 @@
     .research-item {
       max-width: 300px;
     }
+    .blog-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .blog-list li {
+      padding: 0.75em 0;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      display: flex;
+      align-items: baseline;
+      gap: 1em;
+    }
+    .blog-list li:last-child {
+      border-bottom: none;
+    }
+    .blog-date {
+      font-size: 0.85em;
+      color: #999;
+      white-space: nowrap;
+      min-width: 7em;
+    }
+    .blog-title a {
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .blog-title a:hover {
+      text-decoration: underline;
+    }
+    .blog-tags {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-left: 0.5em;
+    }
+    .blog-tag {
+      font-size: 0.75em;
+      background: rgba(0,0,0,0.06);
+      border-radius: 99px;
+      padding: 1px 9px;
+      color: #666;
+      text-decoration: none;
+    }
   </style>
 
 </head>
@@ -86,7 +128,6 @@
                 <li>Evaluating uncertainty in LLM Agents @<a href="https://tea.ece.ufl.edu/" target="_blank" rel="noopener noreferrer">the TEA Lab</a></li>
                 <li>Detecting hallucinations in video generation models @<a href="https://tea.ece.ufl.edu/" target="_blank" rel="noopener noreferrer">the TEA Lab</a></li>
                 <li>Human knee segmentation @<a href="https://www.dreamteameng.org/" target="_blank" rel="noopener noreferrer">Dream Team Engineering</a></li>
-                <!-- <li>Theory of Mind Simulator @<a href="https://vercel-mirror-ten.vercel.app/" target="_blank" rel="noopener noreferrer">Gator AI</a></li> -->
               </ul>
               <p style="text-align:center">
                 <a href="mailto:{{ site.footer-links.email }}">Email</a> &nbsp;/&nbsp;
@@ -101,6 +142,47 @@
           </tr>
         </table>
 
+        <!-- ============================================================ -->
+        <!-- BLOG SECTION -->
+        <!-- ============================================================ -->
+        {% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'blog'" %}
+        {% if blog_posts.size > 0 %}
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Blog</h2>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0 2.5% 2.5% 2.5%;">
+              <ul class="blog-list">
+                {% for post in blog_posts %}
+                <li>
+                  <span class="blog-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                  <span class="blog-title">
+                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    {% if post.tags and post.tags.size > 0 %}
+                    <span class="blog-tags">
+                      {% for tag in post.tags %}
+                      <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}" class="blog-tag">{{ tag }}</a>
+                      {% endfor %}
+                    </span>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+              </ul>
+            </td>
+          </tr>
+        </table>
+        {% endif %}
+
+        <!-- ============================================================ -->
+        <!-- RESEARCH SECTION -->
+        <!-- ============================================================ -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -115,7 +197,6 @@
           {% for post in site.posts %}
           {% assign categories = post.categories | join: " " %}
           {% if categories contains 'research' %}
-          {% assign current_date = '2025-04-15' %}
           <tr>
             <td style="padding:2.5%;width:40%;vertical-align:middle;min-width:120px">
               <div class="research-item">
@@ -136,7 +217,6 @@
                 {% endif %}
               </p>
               <p>
-                {% comment %}Prefer an explicit excerpt (frontmatter). If missing, fall back to the first words of the post content.{% endcomment %}
                 {% if post.excerpt and post.excerpt != "" %}
                   {{ post.excerpt }}
                 {% else %}
@@ -181,9 +261,7 @@
           {% endif %}
           {% endfor %}
         </table>
-        
-
-          {% endif %}
+        {% endif %}
 
         {% if page.images %}
         <div class="images">
@@ -218,7 +296,6 @@
                 frame.src = pdfUrl;
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
-                // Add class to body to prevent scrolling
                 document.body.classList.add('modal-open');
             }
             
@@ -228,18 +305,15 @@
                 modal.classList.remove('active');
                 frame.src = '';
                 document.body.style.overflow = '';
-                // Remove class from body
                 document.body.classList.remove('modal-open');
             }
             
-            // Close modal when clicking outside the content
             document.getElementById('pdfModal').addEventListener('click', function(e) {
                 if (e.target === this) {
                     closePdfModal();
                 }
             });
 
-            // Close modal with Escape key
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape') {
                     closePdfModal();
@@ -254,9 +328,7 @@
           <tr>
             <td style="padding:0px">
               <br>
-              <p style="text-align:center;font-size:small;">
-     
-              </p>
+              <p style="text-align:center;font-size:small;"></p>
             </td>
           </tr>
         </table>
