@@ -57,12 +57,10 @@ sass:
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  math_engine: null
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
 # Use the following plug-ins
@@ -73,11 +71,6 @@ plugins:
 defaults:
   - scope:
       path: ""
-      type: "posts"
-    values:
-      layout: post
-  - scope:
-      path: "_posts"
       type: "posts"
     values:
       layout: post
