@@ -24,6 +24,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" type="text/css">
 
   <style>
+    body {
+      overflow-x: hidden;
+    }
     video {
       width: 100%;
       max-width: 300px;
@@ -96,6 +99,43 @@
       padding: 1px 9px;
       color: #666;
       text-decoration: none;
+    }
+    .page-content {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      max-width: 100%;
+    }
+    .page-content img,
+    .page-content video,
+    .page-content iframe,
+    .page-content object,
+    .page-content embed {
+      max-width: 100%;
+      height: auto;
+    }
+    .page-content pre,
+    .page-content code {
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .page-content table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .page-content mjx-container[display="true"] {
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    @media (max-width: 640px) {
+      .page-content {
+        font-size: 0.98rem;
+      }
+      .page-content table {
+        font-size: 0.95rem;
+      }
     }
   </style>
 
@@ -322,7 +362,9 @@
         </script>
         {% endif %}
 
-        {{ content }}
+        <div class="page-content">
+          {{ content }}
+        </div>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
