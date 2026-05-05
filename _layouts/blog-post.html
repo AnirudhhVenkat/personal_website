@@ -29,17 +29,48 @@
       table-layout: fixed;
       width: 100%;
     }
-    td {
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      max-width: 0;
+    .blog-post-content {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      max-width: 100%;
+    }
+    .blog-post-content img,
+    .blog-post-content video,
+    .blog-post-content iframe,
+    .blog-post-content object,
+    .blog-post-content embed {
+      max-width: 100%;
+      height: auto;
+    }
+    .blog-post-content pre,
+    .blog-post-content code {
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .blog-post-content table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .blog-post-content mjx-container[display="true"] {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
     }
     img {
       max-width: 100%;
       height: auto;
     }
-    mjx-container[display="true"] {
-      margin: 2.0em 0 !important;
+    @media (max-width: 640px) {
+      .blog-post-content {
+        font-size: 0.98rem;
+      }
+      .blog-post-content table {
+        font-size: 0.95rem;
+      }
     }
   </style>
 
@@ -75,7 +106,7 @@
 
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;table-layout:fixed;">
     <tr>
-      <td style="padding:2.5%;overflow-wrap:break-word;word-wrap:break-word;">
+      <td class="blog-post-content" style="padding:2.5%;">
 
         <p><a href="{{ site.baseurl }}/">← Back to home</a></p>
 
